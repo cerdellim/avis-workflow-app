@@ -1,0 +1,24 @@
+@import 'tailwindcss';
+
+@theme {
+  --font-sans: 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --color-canvas: #f3f5f4;
+  --color-ink: #17211e;
+  --color-muted: #3e4c48;
+  --color-line: #d5deda;
+  --color-brand: #005eb8;
+  --color-brand-strong: #004482;
+  --color-surface: #ffffff;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  background: var(--color-canvas);
+  color: var(--color-ink);
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-brand);
+  outline-offset: 2px;
+}
